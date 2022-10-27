@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Games of Luck</string>
+    <string name="dice_roller">Dice Roller</string>
+    <string name="wheels_of_fortune">Wheels of Fortune</string>
+    <string name="truth_or_dare">Truth or Dare</string>
+    <string name="head_or_tails">Head or Tails</string>
+    <string name="random_number">Random Number</string>
+    <string name="slot_machine">Slot Machine</string>
+    <string name="roll">Roll</string>
+    <string name="dice_rolled">Dice Rolled!</string>
 </resources>

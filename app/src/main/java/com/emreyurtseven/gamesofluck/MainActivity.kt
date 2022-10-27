@@ -1,7 +1,7 @@
 package com.emreyurtseven.gamesofluck
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.emreyurtseven.gamesofluck.databinding.ActivityMainBinding
 
@@ -18,22 +18,22 @@ class MainActivity : AppCompatActivity() {
 
         gamesList = ArrayList<GamesModel>()
 
-        val spin = GamesModel("Spin",R.drawable.img_spin)
+        val spin = GamesModel(0,"Wheel of Fortune",R.drawable.img_spin)
         gamesList.add(spin)
 
-        val randomNumber = GamesModel("Random Number",R.drawable.img_number_seven)
+        val randomNumber = GamesModel(1,"Random Number",R.drawable.img_number_seven)
         gamesList.add(randomNumber)
 
-        val slotMachine = GamesModel("Slot Machine",R.drawable.img_slot_machine)
+        val slotMachine = GamesModel(2,"Slot Machine",R.drawable.img_slot_machine)
         gamesList.add(slotMachine)
 
-        val coin = GamesModel("Heads or Tails",R.drawable.img_coin)
+        val coin = GamesModel(3,"Head or Tails",R.drawable.img_coin)
         gamesList.add(coin)
 
-        val dice = GamesModel("Dice",R.drawable.img_dice)
+        val dice = GamesModel(4,"Dice Roller",R.drawable.img_dice)
         gamesList.add(dice)
 
-        val bottle = GamesModel("Truth or Dare",R.drawable.img_bottle)
+        val bottle = GamesModel(5,"Truth or Dare",R.drawable.img_bottle)
         gamesList.add(bottle)
 
         binding.mainRecyclerView.layoutManager = LinearLayoutManager(this)

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Şans Oyunları</string>
+    <string name="dice_roller">Zar Atma</string>
+    <string name="wheels_of_fortune">Çarkı Felek</string>
+    <string name="truth_or_dare">Doğruluk mu Cesaretlik mi?</string>
+    <string name="head_or_tails">Yazı Tura</string>
+    <string name="random_number">Rastgele Sayı</string>
+    <string name="slot_machine">Slot Makinası</string>
+    <string name="roll">Zar At</string>
+    <string name="dice_rolled">Zar Atıldı!</string>
+</resources>

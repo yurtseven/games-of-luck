@@ -1,5 +1,6 @@
 package com.emreyurtseven.gamesofluck
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -20,7 +21,10 @@ class GamesAdapter(val gameList: ArrayList<GamesModel>) : RecyclerView.Adapter<G
         holder.binding.gamesItemImage.setImageResource(gameList.get(position).gameImage)
 
         holder.itemView.setOnClickListener {
-
+            if(gameList.get(position).gameID == 4) {
+                val intent = Intent(holder.itemView.context, DiceRoller::class.java)
+                holder.itemView.context.startActivity(intent)
+            }
         }
 
     }

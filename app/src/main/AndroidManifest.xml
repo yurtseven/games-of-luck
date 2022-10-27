@@ -13,11 +13,12 @@
         android:theme="@style/Theme.GamesOfLuck"
         tools:targetApi="31">
         <activity
-            android:name=".DiceRoller"
-            android:exported="false">
+            android:name=".DiceRoller.DiceRoller"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".MainActivity"

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.emreyurtseven.gamesofluck.DiceRoller.DiceRoller
 import com.emreyurtseven.gamesofluck.databinding.MainRowBinding
 
 class GamesAdapter(val gameList: ArrayList<GamesModel>) : RecyclerView.Adapter<GamesAdapter.GamesHolder>() {

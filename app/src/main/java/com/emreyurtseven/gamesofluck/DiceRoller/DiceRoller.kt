@@ -1,8 +1,9 @@
-package com.emreyurtseven.gamesofluck
+package com.emreyurtseven.gamesofluck.DiceRoller
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.emreyurtseven.gamesofluck.R
 import com.emreyurtseven.gamesofluck.databinding.ActivityDiceRollerBinding
 
 class DiceRoller : AppCompatActivity() {
@@ -22,9 +23,18 @@ class DiceRoller : AppCompatActivity() {
         }
     }
 
-    private fun rollDice() {
+    private fun rollDice(){
         val dice = Dice(6)
         val diceRoll = dice.roll()
-        binding.rollResultText.text = diceRoll.toString()
+
+        when(diceRoll){
+            1 -> binding.diceImage.setImageResource(R.drawable.img_dice_1)
+            2 -> binding.diceImage.setImageResource(R.drawable.img_dice_2)
+            3 -> binding.diceImage.setImageResource(R.drawable.img_dice_3)
+            4 -> binding.diceImage.setImageResource(R.drawable.img_dice_4)
+            5 -> binding.diceImage.setImageResource(R.drawable.img_dice_5)
+            6 -> binding.diceImage.setImageResource(R.drawable.img_dice_6)
+        }
+
     }
 }

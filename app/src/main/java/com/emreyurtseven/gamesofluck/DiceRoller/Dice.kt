@@ -1,4 +1,4 @@
-package com.emreyurtseven.gamesofluck
+package com.emreyurtseven.gamesofluck.DiceRoller
 
 class Dice (val numSides: Int) {
     fun roll(): Int{

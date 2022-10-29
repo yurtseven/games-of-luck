@@ -8,4 +8,7 @@
     <string name="slot_machine">Slot Machine</string>
     <string name="roll">Roll</string>
     <string name="dice_rolled">Dice Rolled!</string>
+    <string name="heads">Heads</string>
+    <string name="tails">Tails</string>
+    <string name="flip_a_coin">Flip a coin</string>
 </resources>

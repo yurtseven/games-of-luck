@@ -1,10 +1,10 @@
 package com.emreyurtseven.gamesofluck.DiceRoller
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.emreyurtseven.gamesofluck.R
 import com.emreyurtseven.gamesofluck.databinding.ActivityDiceRollerBinding
+import com.google.android.material.snackbar.Snackbar
 
 class DiceRoller : AppCompatActivity() {
 
@@ -16,9 +16,10 @@ class DiceRoller : AppCompatActivity() {
         setContentView(view)
 
         binding.rollButton.setOnClickListener {
-            val toast = Toast.makeText(this, R.string.dice_rolled, Toast.LENGTH_SHORT)
-            toast.show()
-
+            /*val toast = Toast.makeText(this, R.string.dice_rolled, Toast.LENGTH_SHORT)
+            toast.show()*/
+            val snack = Snackbar.make(it,R.string.dice_rolled, Snackbar.LENGTH_SHORT)
+            snack.show()
             rollDice()
         }
     }

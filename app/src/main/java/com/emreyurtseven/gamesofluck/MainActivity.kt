@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         val slotMachine = GamesModel(2,"Slot Machine",R.drawable.img_slot_machine)
         gamesList.add(slotMachine)
 
-        val coin = GamesModel(3,"Head or Tails",R.drawable.img_coin)
+        val coin = GamesModel(3,"Heads or Tails",R.drawable.img_coin)
         gamesList.add(coin)
 
         val dice = GamesModel(4,"Dice Roller",R.drawable.img_dice)

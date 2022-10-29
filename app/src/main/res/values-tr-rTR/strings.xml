@@ -9,4 +9,7 @@
     <string name="slot_machine">Slot Makinası</string>
     <string name="roll">Zar At</string>
     <string name="dice_rolled">Zar Atıldı!</string>
+    <string name="heads">Tura</string>
+    <string name="tails">Yazı</string>
+    <string name="flip_a_coin">Yazı-Tura atıldı</string>
 </resources>

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.emreyurtseven.gamesofluck.DiceRoller.DiceRoller
+import com.emreyurtseven.gamesofluck.HeadsOrTails.HeadsOrTails
 import com.emreyurtseven.gamesofluck.databinding.MainRowBinding
 
 class GamesAdapter(val gameList: ArrayList<GamesModel>) : RecyclerView.Adapter<GamesAdapter.GamesHolder>() {
@@ -24,6 +25,10 @@ class GamesAdapter(val gameList: ArrayList<GamesModel>) : RecyclerView.Adapter<G
         holder.itemView.setOnClickListener {
             if(gameList.get(position).gameID == 4) {
                 val intent = Intent(holder.itemView.context, DiceRoller::class.java)
+                holder.itemView.context.startActivity(intent)
+            }
+            if(gameList.get(position).gameID == 3) {
+                val intent = Intent(holder.itemView.context, HeadsOrTails::class.java)
                 holder.itemView.context.startActivity(intent)
             }
         }

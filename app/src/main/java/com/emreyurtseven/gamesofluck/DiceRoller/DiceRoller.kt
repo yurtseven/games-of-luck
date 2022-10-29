@@ -18,8 +18,7 @@ class DiceRoller : AppCompatActivity() {
         binding.rollButton.setOnClickListener {
             /*val toast = Toast.makeText(this, R.string.dice_rolled, Toast.LENGTH_SHORT)
             toast.show()*/
-            val snack = Snackbar.make(it,R.string.dice_rolled, Snackbar.LENGTH_SHORT)
-            snack.show()
+
             rollDice()
         }
     }
@@ -29,13 +28,36 @@ class DiceRoller : AppCompatActivity() {
         val diceRoll = dice.roll()
 
         when(diceRoll){
-            1 -> binding.diceImage.setImageResource(R.drawable.img_dice_1)
-            2 -> binding.diceImage.setImageResource(R.drawable.img_dice_2)
-            3 -> binding.diceImage.setImageResource(R.drawable.img_dice_3)
-            4 -> binding.diceImage.setImageResource(R.drawable.img_dice_4)
-            5 -> binding.diceImage.setImageResource(R.drawable.img_dice_5)
-            6 -> binding.diceImage.setImageResource(R.drawable.img_dice_6)
+            1 -> {
+                binding.diceImage.setImageResource(R.drawable.img_dice_1)
+                snackbar(1)
+            }
+            2 -> {
+                binding.diceImage.setImageResource(R.drawable.img_dice_2)
+                snackbar(2)
+            }
+            3 -> {
+                binding.diceImage.setImageResource(R.drawable.img_dice_3)
+                snackbar(3)
+            }
+            4 -> {
+                binding.diceImage.setImageResource(R.drawable.img_dice_4)
+                snackbar(4)
+            }
+            5 -> {
+                binding.diceImage.setImageResource(R.drawable.img_dice_5)
+                snackbar(5)
+            }
+            6 -> {
+                binding.diceImage.setImageResource(R.drawable.img_dice_6)
+                snackbar(6)
+            }
         }
 
+    }
+
+    private fun snackbar(diceResult: Int){
+        val snack = Snackbar.make(binding.root,getString(R.string.dice_rolled)+ " " +getString(R.string.result)+ ": " +diceResult.toString(), Snackbar.LENGTH_SHORT)
+        snack.show()
     }
 }

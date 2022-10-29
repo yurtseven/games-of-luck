@@ -25,15 +25,24 @@ class HeadsOrTails : AppCompatActivity() {
         val coin = Coin()
         val coinFlip = coin.flip()
 
-        when (coinFlip) {
-            1 -> {
-                binding.coinImage.setImageResource(R.drawable.img_coin)
-                binding.headsOrTailsResultText.text = getString(R.string.tails)
+        binding.coinImage.animate().apply {
+            duration = 1000
+            rotationXBy(1800f)
+            binding.coinImage.isClickable = false
+        }.withEndAction{
+            when (coinFlip) {
+                1 -> {
+                    binding.coinImage.setImageResource(R.drawable.img_coin)
+                    binding.headsOrTailsResultText.text = getString(R.string.tails)
+                }
+                2 -> {
+                    binding.coinImage.setImageResource(R.drawable.img_coin_heads)
+                    binding.headsOrTailsResultText.text = getString(R.string.heads)
+                }
             }
-            2 -> {
-                binding.coinImage.setImageResource(R.drawable.img_coin_heads)
-                binding.headsOrTailsResultText.text = getString(R.string.heads)
-            }
-        }
+            binding.coinImage.isClickable = true
+        }.start()
+
+
     }
 }

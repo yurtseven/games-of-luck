@@ -11,4 +11,7 @@
     <string name="heads">Heads</string>
     <string name="tails">Tails</string>
     <string name="flip_a_coin">Flip a coin</string>
+    <string name="click_the_coin">Click the coin</string>
+    <string name="refresh">Refresh</string>
+    <string name="result">Result</string>
 </resources>

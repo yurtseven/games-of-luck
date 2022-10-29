@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.emreyurtseven.gamesofluck.DiceRoller.DiceRoller
 import com.emreyurtseven.gamesofluck.HeadsOrTails.HeadsOrTails
+import com.emreyurtseven.gamesofluck.TruthOrDare.TruthOrDare
 import com.emreyurtseven.gamesofluck.databinding.MainRowBinding
 
 class GamesAdapter(val gameList: ArrayList<GamesModel>) : RecyclerView.Adapter<GamesAdapter.GamesHolder>() {
@@ -29,6 +30,10 @@ class GamesAdapter(val gameList: ArrayList<GamesModel>) : RecyclerView.Adapter<G
             }
             if(gameList.get(position).gameID == 3) {
                 val intent = Intent(holder.itemView.context, HeadsOrTails::class.java)
+                holder.itemView.context.startActivity(intent)
+            }
+            if(gameList.get(position).gameID == 5) {
+                val intent = Intent(holder.itemView.context, TruthOrDare::class.java)
                 holder.itemView.context.startActivity(intent)
             }
         }

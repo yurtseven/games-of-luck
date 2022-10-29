@@ -12,4 +12,7 @@
     <string name="heads">Tura</string>
     <string name="tails">Yazı</string>
     <string name="flip_a_coin">Yazı-Tura atıldı</string>
+    <string name="refresh">Yenile</string>
+    <string name="click_the_coin">Paraya tıkla</string>
+    <string name="result">Sonuç</string>
 </resources>

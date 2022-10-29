@@ -13,8 +13,18 @@
         android:theme="@style/Theme.GamesOfLuck"
         tools:targetApi="31">
         <activity
+            android:name=".TruthOrDare.TruthOrDare"
+            android:exported="false"
+            android:label="@string/truth_or_dare"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
             android:name=".HeadsOrTails.HeadsOrTails"
             android:exported="false"
+            android:label="@string/head_or_tails"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -23,6 +33,7 @@
         <activity
             android:name=".DiceRoller.DiceRoller"
             android:exported="false"
+            android:label="@string/dice_roller"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

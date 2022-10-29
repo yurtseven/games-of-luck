@@ -18,22 +18,22 @@ class MainActivity : AppCompatActivity() {
 
         gamesList = ArrayList<GamesModel>()
 
-        val spin = GamesModel(0,"Wheel of Fortune",R.drawable.img_spin)
+        val spin = GamesModel(0,getString(R.string.wheels_of_fortune),R.drawable.img_spin)
         gamesList.add(spin)
 
-        val randomNumber = GamesModel(1,"Random Number",R.drawable.img_number_seven)
+        val randomNumber = GamesModel(1,getString(R.string.random_number),R.drawable.img_number_seven)
         gamesList.add(randomNumber)
 
-        val slotMachine = GamesModel(2,"Slot Machine",R.drawable.img_slot_machine)
+        val slotMachine = GamesModel(2,getString(R.string.slot_machine),R.drawable.img_slot_machine)
         gamesList.add(slotMachine)
 
-        val coin = GamesModel(3,"Heads or Tails",R.drawable.img_coin)
+        val coin = GamesModel(3,getString(R.string.head_or_tails),R.drawable.img_coin)
         gamesList.add(coin)
 
-        val dice = GamesModel(4,"Dice Roller",R.drawable.img_dice)
+        val dice = GamesModel(4,getString(R.string.dice_roller),R.drawable.img_dice)
         gamesList.add(dice)
 
-        val bottle = GamesModel(5,"Truth or Dare",R.drawable.img_bottle)
+        val bottle = GamesModel(5,getString(R.string.truth_or_dare),R.drawable.img_bottle)
         gamesList.add(bottle)
 
         binding.mainRecyclerView.layoutManager = LinearLayoutManager(this)
